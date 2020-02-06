@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ----- Base Header - Footer Styles ----- */
+/* --------------- Base Header - Footer Styles --------------- */
 header,
 footer {
   display: flex;
@@ -107,6 +107,8 @@ footer {
   flex-flow: row wrap;
 }
 
+/* ---------- Header Styles ---------- */
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -114,17 +116,34 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+/* ----- Nav Styles ----- */
+
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 45%
+}
+
+header .divider {
+  width: 100%
+}
+
+/* ---------- Footer Styles ---------- */
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
 }
 
 footer .social-icons {
@@ -140,7 +159,7 @@ footer .social {
 }
 
 
-/* ----- Home Page Styles ----- */
+/* --------------- Mobile Styles - Homepage --------------- */
 .hero-area {
   display: flex;
   justify-content: center;
@@ -162,6 +181,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.ameneties article {
+  width: 55%;
+}
+
 .ameneties .amenity-description {
   display: flex;
   justify-content: center;
@@ -176,7 +199,11 @@ aside {
   flex-flow: row wrap;
 }
 
-/* .review .content-wrapper {
+.reviews h3 {
+  width: 89%;
+}
+
+/* .reviews .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +212,7 @@ aside {
 might not need this - tbd */
 
 
-/* ----- About Page Styles ----- */
+/* --------------- Mobile Styles - About Page --------------- */
 .mission {
   display: flex;
   justify-content: center;
@@ -200,7 +227,7 @@ might not need this - tbd */
   flex-flow: row wrap;
 }
 
-/* ----- FAQ Page Styles ----- */
+/* --------------- Mobile Styles - FAQ Page --------------- */
 
 .faq {
   display: flex;
