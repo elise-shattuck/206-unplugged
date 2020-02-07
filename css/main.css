@@ -510,6 +510,7 @@ might not need this - tbd */
   .reviews h2 {
     width: 100%;
     max-width: 640px;
+    padding: 0;
   }
 
   .reviews figure {
@@ -559,12 +560,62 @@ might not need this - tbd */
     width: 100%;
   }
 
-
-
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Tablet styles here */
+  /* General Styles */
+  .content-wrapper {
+    width: 100%;
+    max-width: 960px;
+  }
+
+  /* Header and Footer Styles */
+  footer .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  /* Home Page Styles */
+  h1 {
+    width: 100%;
+    max-width: 960px;
+    padding: 95px 0 0 0;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 50px 0;
+  }
+
+  aside article {
+    width: 45%;
+    max-width: 320px;
+  }
+
+  .ameneties h2 {
+    padding: 0;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .ameneties article {
+    padding: 25px 0;
+    flex-basis: 30%;
+  }
+
+  .reviews h2 {
+    width: 100%;
+    max-width: 960px;
+    padding: 0;
+  }
+
 }
 
 
