@@ -98,6 +98,68 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* --------------- General Styles --------------- */
+html {
+  font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+ 
+ul, 
+ol {
+  list-style-type: none;
+  font-size: 1.125em;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+ 
+h1 {
+  font-size: 3.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.875em;
+}
+ 
+p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-style: normal;
+}
+ 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /* --------------- Base Header - Footer Styles --------------- */
 header,
 footer {
@@ -268,7 +330,7 @@ aside p {
 }
 
 .reviews h3 {
-  width: 89%;
+  width: 90%;
 }
 
 /* .reviews .content-wrapper {
@@ -441,7 +503,6 @@ might not need this - tbd */
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
-    width: 100%;
     max-width: 640px;
   }
   
@@ -508,7 +569,6 @@ might not need this - tbd */
   }
 
   .reviews h2 {
-    width: 100%;
     max-width: 640px;
     padding: 0;
   }
@@ -565,7 +625,6 @@ might not need this - tbd */
 @media only screen and (min-width: 1200px) {
   /* General Styles */
   .content-wrapper {
-    width: 100%;
     max-width: 960px;
   }
 
@@ -575,13 +634,11 @@ might not need this - tbd */
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
-    width: 100%;
     max-width: 960px;
   }
 
   /* Home Page Styles */
   h1 {
-    width: 100%;
     max-width: 960px;
     padding: 95px 0 0 0;
   }
@@ -611,7 +668,6 @@ might not need this - tbd */
   }
 
   .reviews h2 {
-    width: 100%;
     max-width: 960px;
     padding: 0;
   }
