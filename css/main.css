@@ -159,12 +159,11 @@ footer address {
   text-align: center;
 }
 
-footer .social {
+/*footer .social {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-}
+}*/
 
 footer .social-icons {
   display: flex;
@@ -210,20 +209,26 @@ aside input {
   padding: 0 20px;
 }
 
-.form {
+/*.form {
   width: 100%;
-}
+}*/
 
 aside p {
   padding: 0 20px;
 }
 
 /* ----------- Ameneties ---------- */
+.ameneties .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .ameneties {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
 }
 
 .ameneties article {
@@ -409,16 +414,118 @@ might not need this - tbd */
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* General Styles */
+  .content-wrapper {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  /* Header and Footer Styles */
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  header nav {
+    justify-content: flex-end;
+  }
+
+  header nav ul {
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+
+  footer .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 640px;
+  }
+  
+  .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  footer .contact {
+    width: 40%;
+  }
+
+  footer .social {
+    width: 40%;
+  }
+
+  /* Home Page Styles */
+  h1 {
+    width: 100%;
+    max-width: 640px;
+    padding: 95px 0 0 0;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  aside article {
+    width: 45%;
+  }
+
+  aside h3, aside p, aside input {
+    padding: 0;
+  }
+
+  .ameneties h2 {
+    padding: 0;
+    margin-top: 100px;
+  }
+
+  .ameneties article {
+    padding: 25px 0;
+    width: 35%;
+  }
+
+  .reviews {
+    padding: 100px 0;
+  }
+
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews article {
+    padding: 0;
+  }
+
+  .reviews h2 {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .reviews figure {
+    width: 40%;
+  }
+
+  .reviews article {
+    width: 40%;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* Tablet styles here */
 }
+
 
 /* ==========================================================================
    Print styles.
