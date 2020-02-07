@@ -114,6 +114,11 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+header {
+  padding: 15px 0;
 }
 
 /* ----- Nav Styles ----- */
@@ -146,20 +151,38 @@ footer .content-wrapper {
   width: 55%;
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer h3 {
+  text-align: center;
+}
+
+footer address {
+  text-align: center;
 }
 
 footer .social {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.copyright {
+  margin-top: 50px;
+}
 
 /* --------------- Mobile Styles - Homepage --------------- */
+
+/* ---------- Hero Area ---------- */
 .hero-area {
   display: flex;
   justify-content: center;
@@ -167,6 +190,11 @@ footer .social {
   flex-flow: row wrap;
 }
 
+h1 {
+  padding: 50px 20px 0 20px;
+}
+
+/* ---------- Itinerary Download ---------- */
 aside {
   display: flex;
   justify-content: center;
@@ -174,6 +202,23 @@ aside {
   flex-flow: row wrap;
 }
 
+aside h3 {
+  padding: 25px 20px 0 20px;
+}
+
+aside input {
+  padding: 0 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+aside p {
+  padding: 0 20px;
+}
+
+/* ----------- Ameneties ---------- */
 .ameneties {
   display: flex;
   justify-content: center;
@@ -185,6 +230,15 @@ aside {
   width: 55%;
 }
 
+.ameneties h2 {
+  padding: 50px 20px 0 20px; /* might need to adjust bottom padding */
+}
+
+.ameneties p {
+  margin: 0;
+  text-align: center;
+}
+
 .ameneties .amenity-description {
   display: flex;
   justify-content: center;
@@ -192,11 +246,20 @@ aside {
   flex-flow: row wrap;
 }
 
+/* ---------- Reviews ---------- */
 .reviews {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.reviews h2 {
+  padding: 50px 20px 0 20px;
+}
+
+.reviews article {
+  padding: 0 20px;
 }
 
 .reviews h3 {
@@ -218,6 +281,12 @@ might not need this - tbd */
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 20px;
+
+}
+
+.mission-content h2 {
+  padding-bottom: 50px;
 }
 
 .contact-section {
@@ -225,6 +294,7 @@ might not need this - tbd */
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 20px;
 }
 
 /* --------------- Mobile Styles - FAQ Page --------------- */
@@ -234,6 +304,13 @@ might not need this - tbd */
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 20px;
+}
+
+.faq h2 {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 .faq .content-wrapper {
