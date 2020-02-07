@@ -520,6 +520,34 @@ might not need this - tbd */
     width: 40%;
   }
 
+  /* About Page Styles */
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section h2 {
+    width: 100%;
+  }
+
+  .contact-section .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .contact-section address {
+    width: 45%;
+  }
+
+
+
 }
 
 @media only screen and (min-width: 1200px) {
