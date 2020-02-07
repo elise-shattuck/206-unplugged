@@ -489,7 +489,7 @@ might not need this - tbd */
 
   .ameneties article {
     padding: 25px 0;
-    width: 35%;
+    flex-basis: 35%;
   }
 
   .reviews {
@@ -546,6 +546,7 @@ might not need this - tbd */
     width: 45%;
   }
 
+  /* FAQ Page Styles */
   .faq .content-wrapper {
     justify-content: space-between;
   }
