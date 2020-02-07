@@ -546,6 +546,18 @@ might not need this - tbd */
     width: 45%;
   }
 
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
 
 
 }
