@@ -127,20 +127,20 @@ h3 {
 }
  
 h1 {
-  font-size: 3.75em;
-}
-
-h2 {
   font-size: 2.25em;
 }
 
-h3 {
+h2, {
   font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.125em;
 }
  
 p {
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: 0.875em;
+  line-height: 1.286em;
 }
  
 img {
@@ -148,7 +148,7 @@ img {
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -167,15 +167,16 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 /* ---------- Header Styles ---------- */
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
   margin: 0;
 }
 
@@ -183,11 +184,16 @@ header {
   padding: 15px 0;
 }
 
+div .header-divider {
+  width: 100%;
+  border: 1px solid #3a3a3a;
+}
+
 /* ----- Nav Styles ----- */
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
@@ -195,9 +201,15 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 45%
+  width: 45%;
+  padding: 0;
+}
+
+header nav ul li {
+  padding: 0 20px;
+  font-weight: bold;
 }
 
 header .divider {
@@ -211,21 +223,25 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   width: 55%;
+  flex-flow: row wrap;
+  margin-bottom: 0;
 }
 
 footer h3 {
   text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 footer address {
   text-align: center;
+  color: #ffffff;
 }
 
-/*footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
+footer .social {
+  margin: 50px 0;
+}
 
 footer .social-icons {
   display: flex;
@@ -235,10 +251,13 @@ footer .social-icons {
 
 footer p {
   margin: 0;
+  text-align: center;
+  color: #ffffff;
 }
 
 .copyright {
-  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 /* --------------- Mobile Styles - Homepage --------------- */
@@ -252,7 +271,8 @@ footer p {
 }
 
 h1 {
-  padding: 50px 20px 0 20px;
+  width: 90%;
+  color: #e2e3ed;
 }
 
 /* ---------- Itinerary Download ---------- */
@@ -261,22 +281,52 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+aside .content-wrapper {
+  margin-top: 0;
 }
 
 aside h3 {
-  padding: 25px 20px 0 20px;
+  color: #e2e3ed;
+  padding: 0; /* adjust later */
 }
 
 aside input {
-  padding: 0 20px;
+  padding: 0; /* adjust later */
 }
 
-/*.form {
-  width: 100%;
-}*/
-
 aside p {
-  padding: 0 20px;
+  color: #e2e3ed;
+  padding: 0; /* adjust later */
+}
+
+aside .form,
+aside .form-description {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ----------- Ameneties ---------- */
@@ -298,12 +348,15 @@ aside p {
 }
 
 .ameneties h2 {
-  padding: 50px 20px 0 20px; /* might need to adjust bottom padding */
+  margin: 0;
+  padding: 0; /* adjust later */
+  color: #e2e3ed;
 }
 
 .ameneties p {
-  margin: 0;
+  margin: 36px 0;
   text-align: center;
+  color: #e1e2ea;
 }
 
 .ameneties .amenity-description {
@@ -319,18 +372,23 @@ aside p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
-  padding: 50px 20px 0 20px;
+  margin: 0;
+  padding: 0; /* adjust later? */
+  color: #e2e3ed;
 }
 
-.reviews article {
-  padding: 0 20px;
-}
-
-.reviews h3 {
+.reviews h3,
+.reviews p {
   width: 90%;
+  color: #e2e3ed;
+}
+
+.reviews p {
+  margin: 0;
 }
 
 /* .reviews .content-wrapper {
@@ -348,8 +406,14 @@ might not need this - tbd */
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 20px;
+  background-color: #527158;
+  color: #e2e3ed;
+}
 
+.mission .content-wrapper,
+.contact-section .content-wrapper {
+  width: 90%;
+  max-width: 320px;
 }
 
 .mission-content h2 {
@@ -361,30 +425,56 @@ might not need this - tbd */
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 20px;
+  background-color: #2a423a;
+  color: #e2e3ed;
+}
+
+.mission h2,
+.contact-section h2 {
+  width: 100%;
+  font-size: 1.875em;
+  line-height: 1.2em;
+  margin: 0;
 }
 
 /* --------------- Mobile Styles - FAQ Page --------------- */
-
 .faq {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
-  padding: 50px 20px;
-}
-
-.faq h2 {
-  width: 100%;
-  margin: 0;
-  padding-bottom: 50px;
+  padding: 0;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
+  width: 100%;
+  max-width: 320px;
+}
+
+.faq h2,
+.faq h3,
+.faq p {
+  color: #e2e3ed;
+}
+
+.faq h2 {
+  font-size: 1.875em;
+  line-height: 1em;
+  width: 100%;
+  margin: 0;
+}
+
+.faq h3 {
+  margin: 0;
+}
+
+.faq article {
+  margin-top: 50px;
 }
 
 /* ==========================================================================
@@ -483,6 +573,18 @@ might not need this - tbd */
     max-width: 640px;
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
   /* Header and Footer Styles */
   header .content-wrapper {
     justify-content: space-between;
@@ -497,13 +599,27 @@ might not need this - tbd */
     justify-content: flex-end;
   }
 
+  header nav ul li {
+    padding-right: 0;
+    padding-left: 40px;
+  }
+
+  div .header-divider {
+    display: none;
+  }
 
   footer .content-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
+    width: 100%;
     max-width: 640px;
+    margin: 0;
+  }
+
+  footer .social {
+    margin: 0;
   }
   
   .footer-content {
@@ -512,6 +628,11 @@ might not need this - tbd */
     justify-content: space-evenly;
     align-items: flex-start;
     flex-flow: row wrap;
+    margin: 90px 0;
+  }
+
+  footer h3 {
+    font-size: 1.5em;
   }
 
   footer .contact {
@@ -522,30 +643,40 @@ might not need this - tbd */
     width: 40%;
   }
 
+  footer p {
+    font-size: 0.875em;
+    line-height: 1.7em;
+  }
+
   /* Home Page Styles */
   h1 {
     width: 100%;
     max-width: 640px;
-    padding: 95px 0 0 0;
+    margin: 90px 0;
   }
 
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-flow: row wrap;
   }
 
   aside article {
     width: 45%;
+    margin-top: 50px;
   }
-
   aside h3, aside p, aside input {
     padding: 0;
+    margin: 0;
+  }
+
+  .ameneties .content-wrapper {
+    margin-top: 100px;
   }
 
   .ameneties h2 {
     padding: 0;
-    margin-top: 100px;
   }
 
   .ameneties article {
@@ -562,6 +693,7 @@ might not need this - tbd */
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
   }
 
   .reviews article {
@@ -579,6 +711,7 @@ might not need this - tbd */
 
   .reviews article {
     width: 40%;
+    padding: 0 20px;
   }
 
   /* About Page Styles */
@@ -590,10 +723,29 @@ might not need this - tbd */
 
   .mission-content p {
     width: 45%;
+    margin: 0;
   }
 
   .contact-section h2 {
-    width: 100%;
+    width: 90%;
+    padding-bottom: 10px;
+  }
+
+  .mission .content-wrapper,
+  .contact-section .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  .mission h2,
+  .contact-section h2 {
+    font-size: 2.25em;
+    line-height: 1.2em;
+    margin: 0;
+  }
+
+  .mission h2 {
+    padding-bottom: 30px;
   }
 
   .contact-section .content-wrapper {
@@ -607,17 +759,28 @@ might not need this - tbd */
     width: 45%;
   }
 
+  .contact-section p {
+    margin: 0;
+  }
+
   /* FAQ Page Styles */
   .faq .content-wrapper {
     justify-content: space-between;
+    max-width: 640px;
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
     width: 100%;
+    font-size: 2.25em;
+  }
+
+  .faq h3,
+  .faq p {
+    font-size: 0.875em;
   }
 
 }
@@ -626,6 +789,23 @@ might not need this - tbd */
   /* General Styles */
   .content-wrapper {
     max-width: 960px;
+  }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+  
+  h3 {
+    font-size: 1.875em;
+  }
+   
+  p {
+    font-size: 1.125em;
+    line-height: 1.33em;
   }
 
   /* Header and Footer Styles */
@@ -637,10 +817,26 @@ might not need this - tbd */
     max-width: 960px;
   }
 
+  footer h3 {
+    font-size: 1.875em;
+  }
+
+  footer p {
+    font-size: 1.125em;
+    line-height: 1.333em;
+  }
+
+  footer .contact {
+    width: 50%;
+  }
+
+  footer .social {
+    width: 50%;
+  }
+
   /* Home Page Styles */
   h1 {
     max-width: 960px;
-    padding: 95px 0 0 0;
   }
 
   aside .content-wrapper {
@@ -653,11 +849,16 @@ might not need this - tbd */
   aside article {
     width: 45%;
     max-width: 320px;
+    margin: 0;
+  }
+
+  aside .form,
+  aside .form-description {
+    margin: 0;
   }
 
   .ameneties h2 {
     padding: 0;
-    margin-top: 100px;
     width: 100%;
     max-width: 960px;
   }
@@ -668,10 +869,45 @@ might not need this - tbd */
   }
 
   .reviews h2 {
+    width: 100%;
     max-width: 960px;
     padding: 0;
   }
 
+  /* FAQ Page Styles */
+  .faq .content-wrapper {
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 100px 0;
+  }
+
+  .faq h2 {
+    font-size: 3em;
+  }
+
+  .faq h3,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1em;
+  }
+
+  /* About Page Styles */
+  .mission .content-wrapper,
+  .contact-section .content-wrapper {
+    max-width: 960px;
+    margin: 100px 0;
+  }
+
+  .mission h2,
+  .contact-section h2 {
+    font-size: 3em;
+    width: 100%;
+  }
+
+  .mission h3,
+  .contact-section h3 {
+    font-size: 1.875em;
+  }
 }
 
 
