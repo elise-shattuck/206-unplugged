@@ -794,6 +794,11 @@ might not need this - tbd */
   .mission h2 {
     padding-bottom: 30px;
   }
+
+  /* ----- Map Styles ----- */
+  .map figure {
+    padding-bottom: 50%; 
+  }
   
   /* ----- Contact Styles ----- */
   .contact-section .content-wrapper {
@@ -980,6 +985,7 @@ might not need this - tbd */
   }
 
   /* ---------- About Page Styles - DESKTOP ---------- */
+  /* ----- Mission Styles ----- */
   .mission .content-wrapper,
   .contact-section .content-wrapper {
     max-width: 960px;
@@ -995,6 +1001,11 @@ might not need this - tbd */
   .mission h3,
   .contact-section h3 {
     font-size: 1.875em;
+  }
+
+  /* ----- Map Styles ----- */
+  .map figure {
+    padding-bottom: 33%; 
   }
 }
 
