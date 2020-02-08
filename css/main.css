@@ -410,6 +410,7 @@ might not need this - tbd */
 
 
 /* --------------- Mobile Styles - About Page --------------- */
+/* ---------- Mission Styles ---------- */
 .mission {
   display: flex;
   justify-content: center;
@@ -429,6 +430,24 @@ might not need this - tbd */
   padding-bottom: 50px;
 }
 
+/* ---------- Map Styles ---------- */
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 75%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+
+/* ---------- Contact Styles ---------- */
 .contact-section {
   display: flex;
   justify-content: center;
@@ -576,7 +595,7 @@ might not need this - tbd */
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /* General Styles */
+  /* ---------- General Styles - TABLET ---------- */
   .content-wrapper {
     width: 100%;
     max-width: 640px;
@@ -594,7 +613,12 @@ might not need this - tbd */
     font-size: 1.5em;
   }
 
-  /* Header and Footer Styles */
+  /* ---------- Header and Footer Styles - TABLET ---------- */
+  /* ----- Header Styles ----- */
+  header {
+    padding: 15px 0;
+  }
+  
   header .content-wrapper {
     justify-content: space-between;
   }
@@ -602,7 +626,7 @@ might not need this - tbd */
   header figure {
     width: 34.375%
   }
-
+  /* ----- Nav Styles ----- */
   header nav {
     justify-content: flex-end;
   }
@@ -621,6 +645,7 @@ might not need this - tbd */
     display: none;
   }
 
+  /* ----- Footer Styles ----- */
   footer .content-wrapper {
     display: flex;
     justify-content: space-around;
@@ -661,7 +686,8 @@ might not need this - tbd */
     line-height: 1.7em;
   }
 
-  /* Home Page Styles */
+  /* ---------- Home Page Styles - TABLET ---------- */
+  /* ----- Hero Area ----- */
   h1 {
     width: 100%;
     max-width: 640px;
@@ -672,6 +698,7 @@ might not need this - tbd */
     height: 600px;
   }
 
+  /* ----- Itinerary Download ----- */
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -688,6 +715,7 @@ might not need this - tbd */
     margin: 0;
   }
 
+  /* ----- Ameneties ----- */
   .ameneties .content-wrapper {
     margin-top: 100px;
   }
@@ -701,6 +729,7 @@ might not need this - tbd */
     flex-basis: 35%;
   }
 
+  /* ----- Reviews ----- */
   .reviews {
     padding: 100px 0;
   }
@@ -731,7 +760,8 @@ might not need this - tbd */
     padding: 0 20px;
   }
 
-  /* About Page Styles */
+  /* ---------- About Page Styles - TABLET ---------- */
+  /* ------ Mission Styles * ----- */
   .mission-content {
     display: flex;
     justify-content: space-between;
@@ -764,7 +794,8 @@ might not need this - tbd */
   .mission h2 {
     padding-bottom: 30px;
   }
-
+  
+  /* ----- Contact Styles ----- */
   .contact-section .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -780,7 +811,7 @@ might not need this - tbd */
     margin: 0;
   }
 
-  /* FAQ Page Styles */
+  /* ---------- FAQ Page Styles ---------- */
   .faq .content-wrapper {
     justify-content: space-between;
     max-width: 640px;
@@ -803,7 +834,7 @@ might not need this - tbd */
 }
 
 @media only screen and (min-width: 1200px) {
-  /* General Styles */
+  /* ---------- General Styles - DESKTOP ---------- */
   .content-wrapper {
     max-width: 960px;
   }
@@ -825,12 +856,14 @@ might not need this - tbd */
     line-height: 1.33em;
   }
 
-  /* Header and Footer Styles */
+  /* ---------- Header and Footer Styles - DESKTOP ---------- */
+  /* ----- Header Styles ----- */
   header figure {
     width: 30%;
     justify-content: flex-start;
   }
   
+  /* ----- Footer Styles ----- */
   footer .content-wrapper {
     display: flex;
     justify-content: space-around;
@@ -856,18 +889,28 @@ might not need this - tbd */
     width: 50%;
   }
 
-  /* Home Page Styles */
+  /* ---------- Home Page Styles - DESKTOP ---------- */
+  /* ----- Hero Area ----- */
   h1 {
     width: 70%;
     max-width: 960px;
     margin: 0;
   }
 
+  /* ----- Itinerary Download ----- */
   aside .content-wrapper {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     margin: 50px 0;
+  }
+
+  aside h3 {
+    line-height: 1.2em;
+  }
+
+  aside p {
+    margin-top: 10px;
   }
 
   aside article {
@@ -881,6 +924,7 @@ might not need this - tbd */
     margin: 0;
   }
 
+  /* ----- Amenetities ----- */
   .ameneties h2 {
     padding: 0;
     width: 100%;
@@ -892,6 +936,7 @@ might not need this - tbd */
     flex-basis: 30%;
   }
 
+  /* ----- Reviews ----- */
   .reviews .content-wrapper {
     align-items: flex-start;
     justify-content: space-between;
@@ -917,7 +962,7 @@ might not need this - tbd */
     padding: 0;
   }
 
-  /* FAQ Page Styles */
+  /* ---------- FAQ Page Styles - DESKTOP ---------- */
   .faq .content-wrapper {
     justify-content: space-between;
     max-width: 960px;
@@ -934,7 +979,7 @@ might not need this - tbd */
     line-height: 1em;
   }
 
-  /* About Page Styles */
+  /* ---------- About Page Styles - DESKTOP ---------- */
   .mission .content-wrapper,
   .contact-section .content-wrapper {
     max-width: 960px;
