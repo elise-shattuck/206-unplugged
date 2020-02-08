@@ -130,7 +130,7 @@ h1 {
   font-size: 2.25em;
 }
 
-h2, {
+h2 {
   font-size: 1.875em;
 }
 
@@ -144,11 +144,12 @@ p {
 }
  
 img {
- 
+
 }
  
 figure {
   margin: 0;
+  width: 100%;
 }
  
 address {
