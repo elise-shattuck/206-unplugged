@@ -352,18 +352,25 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
+
 .ameneties article {
   width: 55%;
+  padding: 20px 0;
+}
+
+.ameneties i {
+	font-size: 3.75em;
+  margin-bottom: 30px;
 }
 
 .ameneties h2 {
   margin: 0;
-  padding: 0; /* adjust later */
+  padding: 0;
   color: #e2e3ed;
 }
 
 .ameneties p {
-  margin: 36px 0;
+  margin: 0;
   text-align: center;
   color: #e1e2ea;
 }
@@ -931,6 +938,7 @@ might not need this - tbd */
 
   /* ----- Amenetities ----- */
   .ameneties h2 {
+    margin-bottom: 40px;
     padding: 0;
     width: 100%;
     max-width: 960px;
