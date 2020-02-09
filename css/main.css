@@ -254,6 +254,20 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons p {
+  border-radius: 40px;
+  border: 1px solid #527158;
+  background-color: #527158;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+footer i {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
 footer p {
   margin: 0;
   text-align: center;
